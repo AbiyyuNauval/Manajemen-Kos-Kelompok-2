@@ -1,0 +1,78 @@
+/*
+File Kustom Kosvia - "Super Duper Mantap" (Light Mode)
+-------------------------------------------------------
+*/
+
+/* --- 1. Variabel Warna Utama (Ungu Keren) --- */
+:root {
+  --bs-primary: #8E44AD; /* Ini Ungu Mantap kita */
+  --bs-primary-rgb: 142, 68, 173;
+  
+  --bs-primary-text: #471f58;
+  --bs-primary-bg-subtle: rgba(142, 68, 173, 0.08); /* Latar belakang hover (sangat transparan) */
+  --bs-primary-border-subtle: rgba(142, 68, 173, 0.2);
+}
+
+/* --- 2. Ganti Background Putih Polos --- */
+/* Ini adalah background di belakang kartu-kartu */
+.body-wrapper {
+  background-color: #f8f6f8 !important; /* Warna Latar Belakang Baru - Biru/Abu Sangat Muda */
+}
+
+/* --- 3. Memperjelas Menu Sidebar (Sesuai Permintaan Anda!) --- */
+
+/* Memberi warna pada menu sidebar yang AKTIF */
+.sidebar-nav ul .sidebar-item .sidebar-link.active {
+  background-color: var(--bs-primary) !important;
+  color: #fff !important; /* Teks jadi putih */
+  border-radius: 7px;
+  margin: 0 10px; /* Memberi spasi */
+}
+/* Ikon di sidebar saat AKTIF */
+.sidebar-nav ul .sidebar-item .sidebar-link.active span .ti {
+  color: #fff !important; /* Ikon jadi putih */
+}
+
+/* Memberi warna saat menu di-HOVER */
+.sidebar-nav ul .sidebar-item .sidebar-link:hover {
+  background-color: var(--bs-primary-bg-subtle) !important; /* Latar ungu transparan */
+  color: var(--bs-primary) !important; /* Teks jadi ungu */
+  border-radius: 7px;
+  margin: 0 10px;
+}
+/* Ikon di sidebar saat di-HOVER */
+.sidebar-nav ul .sidebar-item .sidebar-link:hover span .ti {
+  color: var(--bs-primary) !important; /* Ikon jadi ungu */
+}
+/* Menghilangkan background aneh di ikon saat hover */
+.sidebar-nav ul .sidebar-item .sidebar-link:hover .ti {
+    background-color: transparent !important;
+}
+
+/* --- 4. Ganti Item Lainnya (Tombol, Tab, Grafik) --- */
+
+/* Tombol Utama (misal: "Unduh Data") */
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #7B2A9E; /* Sedikit lebih gelap saat di-hover */
+  --bs-btn-hover-border-color: #7B2A9E;
+  --bs-btn-active-bg: #7B2A9E;
+  --bs-btn-active-border-color: #7B2A9E;
+}
+
+/* Tab "Kunjungan Iklan" yang aktif */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: var(--bs-primary);
+  color: #fff; /* Teks jadi putih */
+}
+
+/* Ganti warna grafik (sales-overview) */
+#sales-overview {
+  --bs-primary: #8E44AD !important;
+}
+
+/* Ganti warna notifikasi di ikon lonceng */
+.notification {
+  background-color: var(--bs-primary) 
+}

@@ -1,0 +1,48 @@
+/*
+File Kustom Kosvia
+----------------------
+*/
+
+/* :root adalah variabel global untuk semua warna */
+:root {
+  /* Kita ganti warna --bs-primary dari biru menjadi ungu keren! */
+  --bs-primary: #9d4edd;
+  --bs-primary-rgb: 157, 78, 221;
+
+  /* Ini untuk warna teks dan background yang berhubungan dengan warna primary */
+  --bs-primary-text: #9d4edd;
+  --bs-primary-bg-subtle: rgba(157, 78, 221, 0.1);
+  --bs-primary-border-subtle: rgba(157, 78, 221, 0.2);
+}
+
+/* Ini untuk memastikan tombol, link, dan grafik
+menggunakan warna ungu baru kita dengan benar di dark mode
+*/
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #8c38c9; /* Warna hover sedikit lebih gelap */
+  --bs-btn-hover-border-color: #8c38c9;
+  --bs-btn-active-bg: #8c38c9;
+  --bs-btn-active-border-color: #8c38c9;
+}
+
+/* Perbaiki warna sidebar saat aktif atau di-hover */
+.sidebar-nav ul .sidebar-item .sidebar-link.active,
+.sidebar-nav ul .sidebar-item .sidebar-link:hover {
+    background-color: var(--bs-primary-bg-subtle) !important;
+    color: var(--bs-primary) !important;
+}
+
+/* Perbaiki warna ikon di sidebar saat aktif */
+.sidebar-nav ul .sidebar-item .sidebar-link.active span,
+.sidebar-nav ul .sidebar-item .sidebar-link:hover span {
+    color: var(--bs-primary) !important;
+}
+
+/* Ganti warna grafik (sales-overview) */
+#sales-overview {
+  /* Ini akan mengubah warna default grafik ApexCharts */
+  --bs-primary: #9d4edd !important;
+}
